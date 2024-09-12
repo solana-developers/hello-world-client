@@ -1,1 +1,1 @@
-An onchain 'hello world' program in native Rust used in the Solana native development course.
+An onchain 'hello world' program in native Rust used in the [Hello World lesson](https://solana.com/developers/courses/native-onchain-development/hello-world-program) on the Solana native development course.
