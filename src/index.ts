@@ -13,7 +13,7 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-const programId = new PublicKey("8ziTvCeyd66eRqKAv1e5jB61Q4WbRacmNVHwrDP4YJay");
+const programId = new PublicKey("7MAbECDwBmhHUJ1pHZL551PzGZ3vgRiodoSAeHFyYfn9");
 const connection = new Connection(clusterApiUrl("devnet"));
 
 export const sayHello = async (payer: Keypair): Promise<string> => {
@@ -30,7 +30,7 @@ export const sayHello = async (payer: Keypair): Promise<string> => {
 
 try {
   const payer = await initializeKeypair(connection);
-  await connection.requestAirdrop(payer.publicKey, LAMPORTS_PER_SOL);
+  // await connection.requestAirdrop(payer.publicKey, LAMPORTS_PER_SOL);
 
   const transactionSignature = await sayHello(payer);
 
