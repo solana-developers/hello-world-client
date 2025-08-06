@@ -1,7 +1,7 @@
 import { before, describe, test } from "node:test";
 import { strict as assert } from "assert";
 import { Keypair } from "@solana/web3.js";
-import { sayHello } from "./index";
+import { sayHello } from "./index-original";
 
 describe("Solana Hello World Program", () => {
   let payer: Keypair;
